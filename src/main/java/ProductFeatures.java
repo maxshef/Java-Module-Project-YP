@@ -3,7 +3,6 @@ public class ProductFeatures {
     double finalProductPrice = 00.00;
     double productPrice = 00.00;
     String listProducts = "";
-
     public void product(Scanner scanner) {
         while (true) {
             System.out.println("Введите название товара");
