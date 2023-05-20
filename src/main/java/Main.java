@@ -18,9 +18,12 @@ public class Main {
         }
         System.out.println("Счет будет разделен на:" + howPeople);
         productFeatures.product(scanner);
-        farmaterr.formatRub(String RUB,double finalScorePeople);
+        //farmaterr.formatRub();
+        double finalScorePeople = productFeatures.finalProductPrice / howPeople;
+        String RUB = farmaterr.formatRub(howPeople, productFeatures.finalProductPrice);
         System.out.println("Список продуктов:\n"+productFeatures.listProducts+"\n");
-        String format = "Общая стоимость составила:  %.2f "+RUB+ "\nс каждого по: %.2f " +RUB2+".";
-        System.out.println(String.format(format, productFeatures.finalProductPrice, finalScorePeople));
+        String format = "Общая стоимость составила:  %.2f "+RUB+ "\nс каждого по:";
+        //String format = "Общая стоимость составила:  %.2f "+RUB+ "\nс каждого по: %.2f " +RUB+".";
+        System.out.println(String.format(format, productFeatures.finalProductPrice));
     }
 }
