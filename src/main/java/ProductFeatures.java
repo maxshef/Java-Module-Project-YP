@@ -17,8 +17,7 @@ public class ProductFeatures {
                 }
                 catch (Exception error) {
                     System.out.println("Введена неверная цена, цена должна быть больше 0.00");
-                }finally {
-            }
+                }
 
             System.out.println("Хотите продолжить ввод товаров или введите завершить");
             finalProductPrice = finalProductPrice + productPrice;
